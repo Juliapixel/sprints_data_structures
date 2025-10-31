@@ -32,19 +32,22 @@ Benchmark com 500 dispositivos adicionados ([s3_benchmark.py](s3_benchmark.py)):
 | Trocas      |    63302    |      498       |
 | Tempo (μs)  |    621.2    |     146.9      |
 
+### Sprint 4
+
+Consolidação do código e da documentação das sprints anteriores e formulação do
+relatório em PDF
+
 ## Compilação e execução
 
 A compilação correta do programa exige suporte a funçoes POSIX básicas, por
 exemplo, utilizando o `gcc` distribuído pelo projeto MSYS2
 
 ```bash
-gcc -o sprint1.exe sprint1.c && ./sprint1.exe
-gcc -o sprint2.exe sprint2.c && ./sprint2.exe
-gcc -o sprint3.exe sprint3.c && ./sprint3.exe
+gcc -o cadastro.exe main.c && ./cadastro.exe
 ```
 
 Para executar o teste de performance:
 
 ```bash
-gcc -o sprint3.exe -O3 sprint3.c && python s3_benchmark.py
+gcc -o cadastro.exe -O3 main.c && python s3_benchmark.py
 ```
